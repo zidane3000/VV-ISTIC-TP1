@@ -26,10 +26,10 @@ Répercussions :
 Exemple de bug :
 *COLLECTIONS-794* : Comportement incorrect de CollectionUtils.retainAll avec des éléments nuls.
 
-Classification du bug : Local (lié à un comportement spécifique de méthode).
-Description : La méthode ne gérait pas correctement les éléments nuls, provoquant des résultats erronés.
-Solution : Amélioration de la logique de la méthode et ajout de tests unitaires pour vérifier la gestion des valeurs nulles.
-Ajout de tests : Oui, des tests de régression ont été ajoutés pour éviter la réapparition du bug.
+- Classification du bug : Local (lié à un comportement spécifique de méthode).
+- Description : La méthode ne gérait pas correctement les éléments nuls, provoquant des résultats erronés.
+- Solution : Amélioration de la logique de la méthode et ajout de tests unitaires pour vérifier la gestion des valeurs nulles.
+- Ajout de tests : Oui, des tests de régression ont été ajoutés pour éviter la réapparition du bug.
 
 3. **Chaos Engineering Netflix**
 
