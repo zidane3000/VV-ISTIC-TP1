@@ -12,7 +12,7 @@
 
 ## Answers
 
-1. **Bug : Problème d'enregistrement de fichiers dans Microsoft Word.** [source](https://www.lemonde.fr/pixels/article/2024/10/08/microsoft-word-decouverte-d-un-bug-qui-supprime-un-document-au-lieu-de-le-sauvegarder_6346684_4408996.html?utm_source=chatgpt.com)
+1. **Bug : Problème d'enregistrement de fichiers dans Microsoft Word.** [ (article source) ](https://www.lemonde.fr/pixels/article/2024/10/08/microsoft-word-decouverte-d-un-bug-qui-supprime-un-document-au-lieu-de-le-sauvegarder_6346684_4408996.html?utm_source=chatgpt.com)
 
 - Certains utilisateurs de Microsoft Word ont rencontré un problème où leurs documents ne pouvaient pas être sauvegardés correctement, entraînant la perte de données. Ce bug était souvent lié à des conflits avec des emplacements réseau ou des paramètres de sauvegarde automatique.
 - Manifestation de la panne : Fichiers corrompus ou non enregistrés, entraînant des pertes de travail importantes.
