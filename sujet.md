@@ -11,3 +11,61 @@
 5.  Shortly after the appearance of WebAssembly another paper proposed a mechanized specification of the language using Isabelle. The paper can be consulted here: https://www.cl.cam.ac.uk/~caw77/papers/mechanising-and-verifying-the-webassembly-specification.pdf. This mechanized specification complements the first formalization attempt from the paper. According to the author of this second paper, what are the main advantages of the mechanized specification? Did it help improving the original formal specification of the language? What other artifacts were derived from this mechanized specification? How did the author verify the specification? Does this new specification removes the need for testing?
 
 ## Answers
+
+
+1. **Bug : Problème d'enregistrement de fichiers dans Microsoft Word.**
+
+- Description du bug : Certains utilisateurs de Microsoft Word ont rencontré un problème où leurs documents ne pouvaient pas être sauvegardés correctement, entraînant la perte de données. Ce bug était souvent lié à des conflits avec des emplacements réseau ou des paramètres de sauvegarde automatique.
+- Manifestation de la panne : Fichiers corrompus ou non enregistrés, entraînant des pertes de travail importantes.
+Répercussions :
+- Clients/consommateurs : Perte de documents importants, frustrations accrues.
+- Entreprise : Impact négatif sur la confiance envers Microsoft et des retours fréquents au support technique.
+- Tests possibles : Simuler différents scénarios d'enregistrement, notamment avec des interruptions réseau ou des configurations atypiques, aurait pu aider à identifier ce problème avant sa propagation.
+
+2. **Bug corrigé dans Apache Commons Collections**
+Exemple de bug :
+COLLECTIONS-794 : Comportement incorrect de CollectionUtils.retainAll avec des éléments nuls.
+
+Classification du bug : Local (lié à un comportement spécifique de méthode).
+Description : La méthode ne gérait pas correctement les éléments nuls, provoquant des résultats erronés.
+Solution : Amélioration de la logique de la méthode et ajout de tests unitaires pour vérifier la gestion des valeurs nulles.
+Ajout de tests : Oui, des tests de régression ont été ajoutés pour éviter la réapparition du bug.
+
+3. **Chaos Engineering Netflix**
+
+Approche de Netflix :
+Expériences : Arrêts de serveurs, latence réseau, pannes de dépendances.
+Exigences : Un système distribué et des outils de surveillance pour observer les comportements.
+Variables observées : Disponibilité, temps de réponse, taux d'erreurs.
+Résultats : Une résilience accrue du service de streaming.
+
+Autres entreprises utilisant le Chaos Engineering :
+Des entreprises comme Amazon, Google et Microsoft réalisent des expériences similaires. Par exemple, Amazon simule des pannes de serveurs pour tester la résilience de son site.
+
+Spéculation pour d'autres organisations :
+Les banques pourraient simuler des pannes d’API pour tester les systèmes de transactions en ligne.
+Les hôpitaux pourraient tester des coupures de bases de données pendant les périodes de forte affluence.
+
+4. **Spécification formelle de WebAssembly**
+   
+Avantages d’une spécification formelle :
+Garantit la correction du design pour un code sécurisé et fiable.
+Aide au débogage et à la compréhension grâce à un cadre mathématique clair.
+Supprime-t-elle la nécessité de tests ?
+Non, les tests restent nécessaires pour valider la conformité des implémentations à la spécification et détecter des problèmes pratiques.
+
+5. **Spécification mécanisée de WebAssembly**
+
+Avantages de la spécification mécanisée (via Isabelle) :
+Fournit une spécification exécutable pour validation.
+Offre des preuves de correction qui complètent la formalisation manuelle.
+Améliorations apportées à la spécification originale :
+Oui, elle a corrigé des ambiguïtés et renforcé la formalisation.
+
+Artifacts dérivés :
+Preuves vérifiables par machine et interpréteur validé pour WebAssembly.
+Processus de vérification :
+Les auteurs ont utilisé des preuves automatisées pour vérifier les propriétés de la spécification.
+
+Supprime-t-elle la nécessité de tests ?
+Non, les tests restent essentiels pour couvrir des scénarios non inclus dans les preuves formelles.
