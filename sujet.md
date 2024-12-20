@@ -12,10 +12,9 @@
 
 ## Answers
 
+1. **Bug : Problème d'enregistrement de fichiers dans Microsoft Word.** [source](https://www.lemonde.fr/pixels/article/2024/10/08/microsoft-word-decouverte-d-un-bug-qui-supprime-un-document-au-lieu-de-le-sauvegarder_6346684_4408996.html?utm_source=chatgpt.com)
 
-1. **Bug : Problème d'enregistrement de fichiers dans Microsoft Word.**
-
-- Description du bug : Certains utilisateurs de Microsoft Word ont rencontré un problème où leurs documents ne pouvaient pas être sauvegardés correctement, entraînant la perte de données. Ce bug était souvent lié à des conflits avec des emplacements réseau ou des paramètres de sauvegarde automatique.
+- Certains utilisateurs de Microsoft Word ont rencontré un problème où leurs documents ne pouvaient pas être sauvegardés correctement, entraînant la perte de données. Ce bug était souvent lié à des conflits avec des emplacements réseau ou des paramètres de sauvegarde automatique.
 - Manifestation de la panne : Fichiers corrompus ou non enregistrés, entraînant des pertes de travail importantes.
 Répercussions :
 - Clients/consommateurs : Perte de documents importants, frustrations accrues.
@@ -23,8 +22,9 @@ Répercussions :
 - Tests possibles : Simuler différents scénarios d'enregistrement, notamment avec des interruptions réseau ou des configurations atypiques, aurait pu aider à identifier ce problème avant sa propagation.
 
 2. **Bug corrigé dans Apache Commons Collections**
+
 Exemple de bug :
-COLLECTIONS-794 : Comportement incorrect de CollectionUtils.retainAll avec des éléments nuls.
+*COLLECTIONS-794* : Comportement incorrect de CollectionUtils.retainAll avec des éléments nuls.
 
 Classification du bug : Local (lié à un comportement spécifique de méthode).
 Description : La méthode ne gérait pas correctement les éléments nuls, provoquant des résultats erronés.
@@ -33,18 +33,24 @@ Ajout de tests : Oui, des tests de régression ont été ajoutés pour éviter l
 
 3. **Chaos Engineering Netflix**
 
-Approche de Netflix :
-Expériences : Arrêts de serveurs, latence réseau, pannes de dépendances.
-Exigences : Un système distribué et des outils de surveillance pour observer les comportements.
-Variables observées : Disponibilité, temps de réponse, taux d'erreurs.
-Résultats : Une résilience accrue du service de streaming.
+Netflix utilise *Chaos Engineerin*g pour tester la résilience de ses systèmes en simulant des pannes en production. 
+Les expériences menées incluent :
+- Arrêt de serveurs aléatoires pour évaluer l’impact sur la disponibilité.
+- Injection d’erreurs comme des interruptions réseau ou des pannes de disque.
+- Tests de surcharge pour analyser le comportement sous forte demande.
 
-Autres entreprises utilisant le Chaos Engineering :
-Des entreprises comme Amazon, Google et Microsoft réalisent des expériences similaires. Par exemple, Amazon simule des pannes de serveurs pour tester la résilience de son site.
+Variables observées
+- Disponibilité des services.
+- Temps de réponse et taux d’erreurs.
+- Capacité de récupération après une dégradation progressive.
+  
+Résultats principaux
+- Détection et correction proactive de failles.
+- Renforcement de la résilience et de la fiabilité des systèmes.
+- Développement d’outils comme Chaos Monkey pour automatiser ces tests.
 
-Spéculation pour d'autres organisations :
-Les banques pourraient simuler des pannes d’API pour tester les systèmes de transactions en ligne.
-Les hôpitaux pourraient tester des coupures de bases de données pendant les périodes de forte affluence.
+Netflix et autres entreprises
+D’autres organisations comme Amazon et Google adoptent des techniques similaires, adaptées à leurs besoins. Par exemple, une entreprise bancaire pourrait simuler des pannes de bases de données ou des systèmes IoT des interruptions réseau, tout en surveillant continuité de service et performance.
 
 4. **Spécification formelle de WebAssembly**
    
